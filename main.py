@@ -22,8 +22,6 @@ async def help(ctx):
   )
   s = "**-track <amazon.in link> <alert price (optional)>**: Tracks the price of the product. Alert price is the current price by default \n **-list**: Lists all your trackings \n **-delete <item index>**: Deletes a product from tracking list \n **-current <item index>**- Tells the current price of the product\n"
   embed.add_field(name = "Amazon tracking", value = s, inline = False)
-  s = "**-ss <valid link>**: Sends screenshot of the webpage \n **-insta <username>**: Sends a screenshot of the Instagram Page"
-  embed.add_field(name = "Web Scrapping", value = s, inline = False)
   embed.set_footer(text = 'The prices od amazon trackings are updated every 2 hours')
   await ctx.send(embed = embed)
 
